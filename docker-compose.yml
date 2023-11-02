@@ -1,0 +1,8 @@
+version: '3'
+services:
+  gcc:
+    image: gcc:latest
+    container_name: gcc_container
+    volumes:
+      - ./Day1:/usr/src/myapp
+    working_dir: /usr/src/myapp
